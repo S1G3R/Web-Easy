@@ -1,0 +1,29 @@
+/* ========================================================= */
+/*  Configurações Base e Variáveis                           */
+/* ========================================================= */
+
+:root {
+    --primary-color: #5d507b;
+    --secondary-color: #8ac29e;
+    --tertiary-color: #4b8c9d;
+    --dark-purple: #4a4163;
+    --light-grey-bg: #f0f5f7;
+    --light-blue-bg: #eaf4f7;
+    --text-color: #333;
+    --light-text-color: #555;
+    --border-color: #ccc;
+    --shadow-light: rgba(0,0,0,0.1);
+    --shadow-medium: rgba(0,0,0,0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-grey-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}

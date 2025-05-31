@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Easy - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logoAba.png" type="image/x-icon" sizes="32x32">
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logoHeader.png" alt="Web Easy Logo">
+            </a>
+            <button class="hamburger-menu" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-button">Início</a></li>
+                <li><a href="faq.html" class="nav-button">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cadastro-container">
+            <h2>Criar Nova Conta</h2>
+            <form id="cadastroForm" action="cadastro" method="POST">
+                <div class="form-group">
+                    <label for="full_name">Nome Completo:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Senha:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <button type="submit" class="cadastro-button">Cadastrar</button>
+                <a href="login.html" class="login-link">Já tem uma conta? Faça login aqui!</a>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Web Easy. Todos os direitos reservados.</p>
+        <p>Ajudando você a se conectar com o mundo!</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

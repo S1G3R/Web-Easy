@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Easy - Reportar Problema</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logoAba.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logoHeader.png" alt="Web Easy Logo">
+            </a>
+            <button class="hamburger-menu" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="lista.html" class="nav-button">Aulas</a></li>
+                <li><a href="grafico.html" class="nav-button">Desempenho</a></li>
+                <li><a href="login.html" class="nav-button">Login</a></li>
+                <li><a href="faq.html" class="nav-button">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="report-container">
+            <h2>Reportar um Problema</h2>
+            <p>Por favor, descreva o problema que você está enfrentando. Isso nos ajudará a melhorar o Web Easy para
+                todos!</p>
+            <form id="reportForm" action="reportar_problema" method="POST">
+                <div class="form-group">
+                    <label for="problem_type">Qual tipo de problema está ocorrendo?</label>
+                    <select id="problem_type" name="problem_type" required>
+                        <option value="">Selecione um tipo de problema</option>
+                        <option value="acesso_aulas">Problema com acesso às aulas</option>
+                        <option value="video_nao_carrega">Vídeo não carrega/funciona</option>
+                        <option value="audio_problema">Problema de áudio</option>
+                        <option value="pagina_nao_carrega">Página não carrega/erro</option>
+                        <option value="login_cadastro">Problema com login/cadastro</option>
+                        <option value="conteudo_incorreto">Conteúdo incorreto/desatualizado</option>
+                        <option value="sugestao_melhoria">Sugestão de melhoria</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="problem_description">Descreva o problema em detalhes:</label>
+                    <textarea id="problem_description" name="problem_description" rows="7"
+                        placeholder="Ex: O vídeo da aula 'Navegando na Internet' não está carregando, fica apenas uma tela preta."
+                        required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Relato</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Web Easy. Todos os direitos reservados.</p>
+        <p>Ajudando você a se conectar com o mundo!</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

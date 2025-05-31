@@ -1,0 +1,21 @@
+/* ========================================================= */
+/*  Rodapé (Footer)                                          */
+/* ========================================================= */
+
+footer {
+    background-color: #3b3452;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px var(--shadow-medium);
+    width: 100%;
+    font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 20px 0;
+        font-size: 1em;
+    }
+}

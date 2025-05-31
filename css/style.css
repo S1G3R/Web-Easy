@@ -1,0 +1,14 @@
+/* Importação dos arquivos CSS separados */
+/* A ordem importa! Estilos importados depois podem sobrescrever os anteriores. */
+
+@import url('base.css');
+@import url('header.css');
+@import url('main.css');
+@import url('forms.css');
+@import url('lista.css');
+@import url('grafico.css');
+@import url('faq.css');
+@import url('aula.css');
+@import url('footer.css');
+
+/* O ideal é mantê-los dentro dos arquivos específicos. */

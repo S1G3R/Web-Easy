@@ -1,0 +1,73 @@
+/* ========================================================= */
+/*  Estilos da Página de Aulas                               */
+/* ========================================================= */
+
+.level-section {
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+}
+.level-section h3 {
+    color: var(--dark-purple);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.lesson-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lesson-list li {
+    margin-bottom: 10px;
+}
+.lesson-list a {
+    display: block;
+    background-color: var(--light-blue-bg);
+    color: var(--dark-purple);
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.lesson-list a:hover {
+    background-color: #dbeff5;
+    color: #3b3452;
+}
+.rickroll-lesson {
+    background-color: #ffcccc !important;
+    color: #cc0000 !important;
+    font-weight: bold;
+    border: 2px dashed #cc0000;
+}
+.rickroll-lesson:hover {
+    background-color: #ffaaaa !important;
+    color: #990000 !important;
+}
+
+@media (min-width: 768px) {
+    .level-section {
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+    .level-section h3 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .lesson-list li {
+        margin-bottom: 15px;
+    }
+    .lesson-list a {
+        padding: 15px 20px;
+        font-size: 1.1em;
+    }
+}

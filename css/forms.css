@@ -1,0 +1,156 @@
+/* ========================================================= */
+/*  Estilos de Formulários e Contêineres                     */
+/* ========================================================= */
+
+.login-container,
+.cadastro-container,
+.report-container,
+.aula-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(100% - 40px);
+    max-width: 350px;
+}
+.cadastro-container {
+    max-width: 400px;
+}
+.report-container {
+    max-width: 550px;
+}
+
+main.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: none;
+    margin: 0;
+    background-color: var(--light-grey-bg);
+    box-shadow: none;
+    border-radius: 0;
+}
+.login-container h2,
+.cadastro-container h2,
+.report-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--light-text-color);
+    font-size: 1em;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 0.95em;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.login-button,
+.cadastro-button,
+.submit-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+.login-button:hover,
+.cadastro-button:hover,
+.submit-button:hover {
+    background-color: #71a681;
+}
+
+.forgot-password,
+.login-link {
+    display: block;
+    margin-top: 10px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.forgot-password:hover,
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .login-container,
+    .cadastro-container,
+    .report-container,
+    .aula-container {
+        padding: 40px;
+        margin: 40px auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    .cadastro-container {
+        max-width: 450px;
+    }
+    .report-container {
+        max-width: 600px;
+    }
+    .login-container h2,
+    .cadastro-container h2,
+    .report-container h2 {
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        margin-bottom: 8px;
+        font-size: 1.1em;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 10px;
+        font-size: 1em;
+    }
+    .form-group textarea {
+        min-height: 120px;
+    }
+    .login-button,
+    .cadastro-button,
+    .submit-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    .forgot-password,
+    .login-link {
+        margin-top: 15px;
+        font-size: 0.95em;
+    }
+}
